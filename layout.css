@@ -1,16 +1,15 @@
 /* Use both block and floating elements */
 header, section, footer {
     display: block;
-    margin: 10px;
-    padding: 10px;
-    background:black;
+    margin: 5px;
+    padding: 0px;
+    background:#550578;
 }
 
 /* Create a grid layout */
 body {
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    gap: 10px;
+    grid-template-rows: auto auto;
 }
 
 /* Experiment with relative and absolute positioning */
@@ -18,7 +17,7 @@ nav {
     position: relative;
     top: 0;
     width: 100%;
-    background-color: #B76E79;
+    background-color: #550578;
 }
 
 nav ul li {
@@ -26,7 +25,7 @@ nav ul li {
 }
 
 /* Handle overflow */
-img.responsive-img {
+.responsive-img {
     max-width: 100%;
     height: auto;
 }
