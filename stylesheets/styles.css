@@ -6,8 +6,9 @@ html, body {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #cd2d4e, #2db8b1);
+    font-family: 'Arial', sans-serif; /* Clean font */
+    /* Complementary gradient to #cd2d4e, going from a soft pinkish-red to a greenish-cyan */
+    background: linear-gradient(45deg, #cd2d4e, #2db8b1); /* Gradient from #cd2d4e (pinkish-red) to a greenish cyan (#2db8b1) */
     color: #fff; /* White text */
     line-height: 1.6;
     display: flex;
@@ -23,18 +24,19 @@ header {
     padding: 20px;
 }
 
-header h1 {
-    font-size: 4rem; 
-    letter-spacing: 5px; 
+h1 {
+    font-size: 4rem; /* Large title */
+    letter-spacing: 5px; /* Spread the letters */
+    font-weight: 700;
     color: #fff;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for more contrast */
 }
 
 /* Main Content */
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
     gap: 20px;
     padding: 20px;
     text-align: center;
@@ -48,13 +50,13 @@ main img {
     border-radius: 15px;
 }
 
-main h2 {
+h2 {
     font-size: 1.8rem;
     margin-top: 15px;
-    color: #cd2d4e; 
+    color: #cd2d4e; /* Heading color matches the main complementary color */
 }
 
-main p {
+p {
     font-size: 1rem;
     color: #333;
 }
@@ -68,7 +70,7 @@ main > * {
 }
 
 main > *:hover {
-    transform: translateY(-10px); 
+    transform: translateY(-10px); /* Lift the card on hover */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
@@ -81,7 +83,7 @@ footer {
 }
 
 footer a {
-    color: #f7a8b8;
+    color: #f7a8b8; /* Soft pinkish link color */
     text-decoration: none;
     font-weight: bold;
 }
@@ -92,17 +94,17 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
+    h1 {
         font-size: 3rem;
     }
 
     main {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
     }
 }
 
 @media (max-width: 480px) {
-    header h1 {
+    h1 {
         font-size: 2.5rem;
     }
 
@@ -110,3 +112,4 @@ footer a:hover {
         font-size: 0.9rem;
     }
 }
+
