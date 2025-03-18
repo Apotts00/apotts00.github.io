@@ -27,7 +27,7 @@ h1 {
     font-size: 4rem; 
     letter-spacing: 5px; 
     font-weight: 700;
-    color: #fff;
+    color: #30b2d6;
     text-transform: uppercase;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
 }
@@ -69,7 +69,7 @@ main > HTML {
 }
 
 main > HTML:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
+    transform: translateY(-10px); 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
@@ -78,16 +78,16 @@ footer {
     margin-top: 40px;
     text-align: center;
     font-size: 1rem;
-    color: #fff;
+    color: #30b2d6;
 }
 
 footer a {
-    color: #f7a8b8; /* Soft pinkish link color */
+    color: #f7a8b8; 
     text-decoration: none;
     font-weight: bold;
 }
 
 footer a:hover {
-    color: #fff;
+    color: #30b2d6;
 }
 
