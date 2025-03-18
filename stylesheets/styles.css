@@ -92,6 +92,12 @@ img {
 	max-width: 50%;
 }
 
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
 footer {
     font-size: 25px;
     color: #21dcd9;
