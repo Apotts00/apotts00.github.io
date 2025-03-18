@@ -1,14 +1,14 @@
 /* General Reset */
-* {
+HTML {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif; 
-    background: linear-gradient(45deg, #f7a8b8, #550578); 
-    color: #fff; 
+    font-family: 'Arial', sans-serif; /* Clean font */
+    background: linear-gradient(45deg, #f7a8b8, #550578); /* Vibrant gradient background */
+    color: #fff; /* White text */
     line-height: 1.6;
     display: flex;
     justify-content: center;
@@ -24,23 +24,43 @@ header {
 }
 
 header h1 {
-    font-size: 4rem;
-    letter-spacing: 5px; 
+    font-size: 4rem; /* Large title */
+    letter-spacing: 5px; /* Spread the letters */
+    font-weight: 700;
     color: #fff;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for more contrast */
+}
 
-/* Section Style */
-section {
+/* Main Content */
+main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
     gap: 20px;
     padding: 20px;
     text-align: center;
     max-width: 1200px;
 }
 
-section div {
+/* Styling each individual element inside the main content */
+main img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+    color: #550578;
+}
+
+main p {
+    font-size: 1rem;
+    color: #333;
+}
+
+main > * {
     background: #fff;
     border-radius: 15px;
     padding: 30px;
@@ -48,21 +68,9 @@ section div {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-section div:hover {
-    transform: translateY(-10px); 
+main > *:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-section div img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-
-section div h2 {
-    font-size: 1.8rem;
-    margin-top: 15px;
-    color: #550578;
 }
 
 /* Footer Style */
@@ -89,8 +97,8 @@ footer a:hover {
         font-size: 3rem;
     }
 
-    section {
-        grid-template-columns: 1fr; 
+    main {
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
     }
 }
 
@@ -103,3 +111,4 @@ footer a:hover {
         font-size: 0.9rem;
     }
 }
+
