@@ -85,11 +85,11 @@ main > html:hover {
 footer {
     margin-top: 20px; 
     text-align: center;
-    font-size: 0.9rem; 
+    font-size: 1em; 
     color: #30b2d6;
 }
 footer a {
-    color: #f7a8b8;
+    color: #30b2d6;
     text-decoration: none;
     font-weight: bold;
 }
