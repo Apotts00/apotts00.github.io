@@ -1,10 +1,9 @@
 html, body {
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
-    max-width: 100px;
-    
+    box-sizing: border-box;    
 }
+
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(45deg, #cd2d4e, #2db8b1); 
